@@ -1,5 +1,5 @@
 #!/bin/bash
 cd $1
 systemctl start docker
-docker build . -t yashprime07/dashboard:latest
-docker push
+docker build . -t yashprime07/$1:latest
+docker push yashprime07/$1:latest
