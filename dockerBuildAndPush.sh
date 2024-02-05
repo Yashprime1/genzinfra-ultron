@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $1
+cd $1
+docker build . -t yashprime07/dashboard:latest
+docker push
